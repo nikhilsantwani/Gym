@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Sign Up</title>
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+      body {
+        background: #000428;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      .sign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100vw ;
+        height: calc(100vh - 67px);
+      }
+      form{
+        /* border: 2px solid red; */
+        padding: 20px;
+        width: 400px;
+      }
+      input{
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        color: white;
+        background-color: transparent;
+        border-top:none ;
+        border-left: none;
+        border-right: none;
+      }
+      #sub{
+        background-color: rgb(22, 215, 22);
+        color: white;
+      }
+      .nav{
+            padding: 10px;
+            background-color: black;
+            color:  #42047e 0%,whitesmoke;
+            text-align: right;
+
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(248, 209, 56);
+            text-decoration: none;
+        }
+        .fa-solid{
+            color:black;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            background-color: #000428;    
+            cursor: pointer;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+        <button><a href="Home.html">Home</a></button>
+        <button><i class="fa-solid fa-user"></i>
+         <a href="login.html">Log in</a></button>
+     </div>
+    <div class="sign">
+        <form action="signup" method="post">
+            <input type="text" id="name" placeholder="Username" name = "name">
+            <input type="text" id="Password" placeholder="Password" name = "pass"/>
+            <br>
+            <input type="text" id="aadhar" placeholder="Aadhar No." name="aadhar" />
+            <input type="text" id="number" placeholder="Phone Number" name = "number"/>
+            <br>
+            <input type="text" id="duration" placeholder="Gym Time Period" name = "duration"/>
+            <input type="submit" value="submit" id="sub" />
+          </form>
+    </div>
+  </body>
+</html>

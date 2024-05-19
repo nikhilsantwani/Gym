@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+        }
+        body{
+            height: 100vh;
+            background: #000428;
+        	background: -webkit-linear-gradient(to right, #004e92, #000428);
+        	background: linear-gradient(to right, #004e92, #000428);
+            
+        }
+        .nav{
+            padding: 10px;
+            background-color: black;
+            color:whitesmoke;
+            text-align: right;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: black; 
+            color :white;  
+            cursor: pointer;
+            font-size: 15px;
+            margin-right: 20px;
+            border: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color:rgb(248, 209, 56) ;
+            text-decoration: none;
+        }
+        .fa-solid{
+            color:black;
+        }
+        .log-box{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 67px);
+            /* background: linear-gradient(90deg, #42047e 0%, rgba(9,9,121,1) 44%, #07f49e 100%); */
+            color: white;
+        }
+        .log{
+            /* border: 2px solid black; */
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            border-radius: 10%;
+        }
+        input{
+            margin: 20px 0px;
+            /* height:4vh; */
+            border-radius:5px;
+            /* border:2px solid rgb(255, 255, 255); */
+            width: 100%;
+            font-size: 18px;
+            padding: 10px;
+            border-top:none ;
+            border-left:none ;
+            border-right: none;
+            background-color: transparent;
+            color: white;
+        }
+        form{
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button><a href="index.html">Home</a></button>
+       <button><a href="Signup.html"><i class="fa-solid fa-user"></i>Sign Up</a></button>
+    </div>
+    <div class="log-box">
+        <div class="log">
+
+            <form action="log" method="post">
+                <br>	
+                <input type="text" name="username" placeholder="UserName"/>
+                <br>
+                <input type="text" name="pass" placeholder="Password"/>
+                <div class="b1" style="display:flex;align-items: center;justify-content: flex-end;"><input type="checkbox"> Remember Me</div>
+                <input type="submit" name="submit" style="background-color: rgb(248, 209, 56);
+                color: white;font-weight: bolder;letter-spacing: 3px">
+            </form>
+    
+        </div>
+    </div>
+</body>
+</html>
